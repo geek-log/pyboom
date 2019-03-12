@@ -1,6 +1,6 @@
 # pyboom
 
-Simple python module to detone a bomb.
+Simple python module to detonate a bomb.
 
 # Usage:
 
