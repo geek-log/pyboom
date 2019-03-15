@@ -1,0 +1,20 @@
+# Ejecutar en consola python.
+import os
+os.getcwd()
+os.path.abspath('')
+
+# Ejecutar en bash.
+sudo apt install -y python3-urllib3
+
+# Ejecutar en consola python.
+import urllib3
+http = urllib3.PoolManager()
+response = http.request('GET','https://www.lockheedmartin.com/en-us/products/dual-mode-laser-guided-bomb.html')
+assert b'Laser Guided Bomb' in response.data
+
+# Ejecutar en bash.
+sudo apt install -y python3-pip
+python3 -m pip install py-rolldice --user
+
+# Ejecutar en consola python.
+rolldice.roll_dice('2d12')
