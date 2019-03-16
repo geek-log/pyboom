@@ -2,7 +2,7 @@
 'Use plantuml para ver este archivo como una imagen: http://plantuml.com'
 start
 
-while (megatones < 10000000?)
+while (megatones < 10000000?) is (sí)
 
 if (segundos < 1?) then (sí)
   :Mostrar mensaje de error;
@@ -16,7 +16,7 @@ else (no)
   :imprimir megatones detonados;
 endif
 
-endwhile
+endwhile (no)
 
 end
 
