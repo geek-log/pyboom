@@ -1,0 +1,13 @@
+@startuml
+'Use plantuml para ver este archivo como una imagen: http://plantuml.com'
+start
+
+if (segundos < 1?) then (sí)
+  :Mostrar mensaje de error;
+else (no)
+  :Ejecutar cuenta regresiva;
+endif
+
+end
+
+@enduml
