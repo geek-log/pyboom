@@ -5,10 +5,10 @@ start
 if (segundos < 1?) then (sí)
   :Mostrar mensaje de error;
 else (no)
-  while (segundos > 0?)
+  repeat
     :imprimir segundo_actual;
     :restar 1 segundo a segundos;
-  endwhile
+  repeat while (segundos > 0)
 endif
 
 end
