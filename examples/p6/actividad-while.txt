@@ -1,0 +1,23 @@
+@startuml
+'Use plantuml para ver este archivo como una imagen: http://plantuml.com'
+start
+
+while (megatones < 10000000?)
+
+if (segundos < 1?) then (sí)
+  :Mostrar mensaje de error;
+else (no)
+  repeat
+    :imprimir segundo_actual;
+    :restar 1 segundo a segundos;
+  repeat while (segundos > 0)
+  :detonar bomba;
+  :guardar megatones detonados;
+  :imprimir megatones detonados;
+endif
+
+endwhile
+
+end
+
+@enduml
