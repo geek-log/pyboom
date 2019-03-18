@@ -8,12 +8,9 @@ Módulo simple de python para detonar bombas.
 # Ejecutar en bash.
 git clone https://gitlab.com/geek.log/pyboom.git
 cd pyboom
-pip install .
+python3 -m pip install . --user
 
 # Ejecutar en consola python.
->>> import pyboom
->>> print (pyboom.atacar_paises())
-
-# Ejecutar con python.
-python3 pyboom.atacar_paises()
+>>> from pyboom import atacar
+>>> atacar()
 ```
