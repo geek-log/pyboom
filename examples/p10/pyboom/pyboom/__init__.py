@@ -143,7 +143,3 @@ def atacar():
         }
     ]
     atacar_paises(objetivos)
-
-
-if __name__ == '__main__':
-    atacar()
