@@ -1,16 +1,5 @@
 # pyboom
 
-Módulo simple de python para detonar bombas.
+Detonador de bombas .. boom!!!
 
-# Uso
-
-```
-# Ejecutar en bash.
-git clone https://gitlab.com/geek.log/pyboom.git
-cd pyboom
-python3 -m pip install . --user
-
-# Ejecutar en consola python.
->>> from pyboom import atacar
->>> atacar()
-```
+Paquete de ejemplo para el tutorial - [Doom Presenta: Python desde cero](https://geekl0g.wordpress.com/tag/python-para-detonar-bombas).
