@@ -5,7 +5,7 @@ with open("README.md", "r") as readme_md:
     long_description = readme_md.read()
 
 setup(name='pyboom',
-      version='0.0.3',
+      version='0.0.1',
       description='Detonador de bombas .. boom!!!',
       long_description=long_description,
       long_description_content_type="text/markdown",
