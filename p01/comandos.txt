@@ -5,5 +5,7 @@ python3
 
 # Ejecutar en consola python.
 print('Boom!!!')
+tres = 3
+print(tres)
 mi_boom = '°º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸'
 print(mi_boom)
