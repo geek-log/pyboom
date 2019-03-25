@@ -29,7 +29,6 @@ pip-log.txt
 htmlcov/
 .tox
 .cache
-tox.ini
 
 # Translations
 *.mo
