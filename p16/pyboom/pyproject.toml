@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "pyboom"
+version = "0.1.0"
+description = "Detonador de bombas .. boom!!!"
+authors = ["constrict0r <constrict0r@protonmail.com>"]
+license="MIT"
+
+readme = "README.md"
+homepage="https://geekl0g.wordpress.com/tag/python-para-detonar-bombas/"
+repository="https://gitlab.com/geek.log/pyboom"
+documentation="https://pyboom.readthedocs.io"
+
+keywords = ["doom", "tutorial"]
+classifiers = [
+    'Topic :: Software Development :: Build Tools',
+    'License :: OSI Approved :: MIT License',
+]
+
+[tool.poetry.dependencies]
+python = "*"
+py-rolldice = "^0.3.9"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.4"
+tox = "^3.7"
+
+[tool.poetry.scripts]
+pyboom = "pyboom.__main__:main"
+
+[tool.tox]
+legacy_tox_ini= """
+[tox]
+skipsdist = True
+envlist = py{27}, py{35}
+
+[testenv]
+deps =
+  poetry
+  pytest
+commands =
+  poetry install
+  pytest
+"""
