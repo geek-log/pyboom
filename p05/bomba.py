@@ -8,4 +8,4 @@ def conteo(segundos):
         
         print('BOOM!!!')
 
-conteo()
+conteo(10)
