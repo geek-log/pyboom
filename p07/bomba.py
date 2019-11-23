@@ -2,7 +2,7 @@
 from random import seed
 from random import randint
 
-def conteo(segundos=10):
+def conteo(segundos):
     if segundos < 1:
         print('No puedo contar menos de un segundo.')
     else:
