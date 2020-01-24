@@ -61,6 +61,7 @@ __pycache__
 
 # Sphinx.
 build
+docs/source/build
 
 # Tests generated files.
 tests/library
