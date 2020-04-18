@@ -13,7 +13,7 @@ def detonar():
     conteo(3)
     print('BOOM!!!')
 
-    seed() 
+    seed()
     return randint(100, 15000000)
 
 megatones = detonar()
