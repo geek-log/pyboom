@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyboom"
-version = "0.1.0"
+version = "0.2.0"
 description = "Detonador de bombas .. boom!!!"
 authors = ["constrict0r <constrict0r@protonmail.com>"]
 license="MIT"
@@ -21,8 +21,8 @@ python = "*"
 py-rolldice = "^0.3.9"
 
 [tool.poetry.dev-dependencies]
-pytest = "^3.4"
-tox = "^3.7"
+pytest = "^=5.4"
+tox = "^3.14"
 
 [tool.poetry.scripts]
 pyboom = "pyboom.__main__:main"

@@ -19,6 +19,7 @@ def conteo(segundos):
         for segundo_actual in reversed(range(1, segundos + 1)):
             print(segundo_actual)
 
+
 def detonar():
     conteo(2)
     seed()
@@ -26,6 +27,7 @@ def detonar():
     print(hongo_explosion(megatones))
 
     return megatones
+
 
 def hongo_explosion(megatones):
     """Tic tac.
@@ -46,10 +48,10 @@ def hongo_explosion(megatones):
         (_ ' ( `  )_  .__)
       ( (  (    )   `)  ) _)
      (__ (_   (_ . _) _) ,__)
-         `~~`\ ' . /`~~`
+         `~~`  ' . /`~~`
               ;   ;
-             `/   \´
-____________`/_ __ \´____________
+             `/   .
+____________`/_ __. __
     """
 
     boom_med = """\
@@ -57,11 +59,11 @@ ____________`/_ __ \´____________
                              ____
                      __,-~~/~    `---.
                    _/_,---(      ,    )
-               __ /        <    /   )  \___
+               __ /        <    /   )  .
 - ------===;;;'====------------------===;;;===----- -  -
-                  \/  ~"~"~"~"~"~\~"~)~"/
-                  (_ (   \  (     >    \)
-                   \_( _ <         >_>'
+                  ..  ~"~"~"~"~"~.~"~)~"/
+                  (_ (   .  (     >    ..
+                   ._( _ <         >_>'
                       ~ `-i' ::>|--"
                           I;|.|.|
                          <|i::|i|`.
@@ -70,37 +72,37 @@ ____________`/_ __ \´____________
 
     boom_max = """\
                  BOOOOOM!!!!
-         ____/ (  (    )   )  \___
-        /( (  (  )   _    ))  )   )\_
+         ____/ (  (    )   )  .   .
+        /( (  (  )   _    ))  )   ).
       ((     (   )(    )  )   (   )  )
     ((/  ( _(   )   (   _) ) (  () )  )
    ( (  ( (_)   ((    (   )  .((_ ) .  )_
   ( (  )    (      (  )    )   ) . ) (   )
  (  (   (  (   ) (  _  ( _) ).  ) . ) ) ( )
  ( (  (   ) (  )   (  ))  .  ) _)(   )  )  )
-(  ( \ ) (    (_  ( ) ( )    )   ) )  )) ( )
+(  ( . ) (    (_  ( ) ( )    )   ) )  )) ( )
  (  (   (  (   (_ ( ) ( _    )  ) (  )  )   )
 ( (  ( (  (  )     (_  )  ) )  _)   ) _( ( )
  ((  (   )(    (     _    )   _) _(_ (  (_ )
   (_((__(_(__(( ( ( |  ) ) ) )_))__))_)___)
-  ((__)        \\||lll|l||///          \_))
-           (   /(/ (  )  ) )\   )
-         (    ( ( ( | | ) ) )\   )
+  ((__)        \\||lll|l||///          ._))
+           (   /(/ (  )  ) ).   )
+         (    ( ( ( | | ) ) ).   )
           (   /(| / ( )) ) ) )) )
         (     ( ((((_(|)_)))))     )
-         (      ||\(|(|)|/||     )
+         (      ||.(|(|)|/||     )
        (        |(||(||)||||        )
-         (     //|/l|||)|\\ \     )
-       (/ / //  /|//||||\\  \ \  \ _)
+         (     //|/l|||)|\\ .     )
+       (/ / //  /|//||||\\  . .  . _)
     """
-
     if megatones < 4000000:
-       return boom_min
+        return boom_min
 
     elif megatones > 4000000 and megatones < 8000000:
-       return boom_med
+        return boom_med
 
     return boom_max
+
 
 def atacar_ciudades(ciudades):
     if ciudades:
@@ -109,12 +111,15 @@ def atacar_ciudades(ciudades):
             print('La ciudad de ' + ciudad + ' ha sido destruida')
             print('Megatones detonados: ' + str(megatones))
 
+
 def atacar_paises(paises):
     if paises:
         for pais in paises:
             if pais['es_enemigo'] and not pais['pago_proteccion']:
-                print(pais['nombre'] + ' es enemigo y no ha pagado protección, atacando ...')
+                print(pais['nombre'] +
+                      ' es enemigo y no ha pagado protección, atacando ...')
                 atacar_ciudades(pais['ciudades'])
+
 
 def atacar():
     objetivos = [
@@ -146,11 +151,12 @@ def atacar():
     atacar_paises(objetivos)
     bomba_acelerada()
 
+
 def bomba_acelerada():
 
     agujero_negro = """\
     Un agujero negro se ha abierto
-    \|/
+    .|/
    - o -
     /-`-.
     :   :
@@ -163,17 +169,17 @@ def bomba_acelerada():
     :_|_:
 
     .---.
-    (\|/)
+    (.|/)
     --0--
-    (/|\)
+    (/|.)
 
-   '.\|/.'
-   (\   /)
+   '..|/.'
+   (.   /)
    - -O- -
-   (/   \)
+   (/   .)
    ,'/|\'.
 
-'.  \ | /  ,'
+'.  . | /  ,'
   `. `.' ,'
  ( .`.|,' .)
  - ~ -0- ~ -
@@ -181,8 +187,8 @@ def bomba_acelerada():
 
 ','|'.` )
   .' .'. '.
-,'  / | \  '.
-    \ '  "  
+,'  / | .  '.
+    . '  "
  ` . `.' ,'
  . `` ,'. "
    ~ (   ~ -
