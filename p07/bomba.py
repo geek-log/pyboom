@@ -2,6 +2,7 @@
 from random import seed
 from random import randint
 
+
 def conteo(segundos):
     if segundos < 1:
         print('No puedo contar menos de un segundo.')
@@ -9,12 +10,14 @@ def conteo(segundos):
         for segundo_actual in reversed(range(1, segundos + 1)):
             print(segundo_actual)
 
+
 def detonar():
     conteo(2)
     print('BOOM!!!')
 
-    seed() 
+    seed()
     return randint(100, 15000000)
+
 
 ciudades = ["Rotruvia Central", "Riba", "Tazlar"]
 ciudades.append("Norwich")

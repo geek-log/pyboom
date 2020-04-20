@@ -2,6 +2,7 @@
 from random import seed
 from random import randint
 
+
 def conteo(segundos):
     if segundos < 1:
         print('No puedo contar menos de un segundo.')
@@ -9,12 +10,14 @@ def conteo(segundos):
         for segundo_actual in reversed(range(1, segundos + 1)):
             print(segundo_actual)
 
+
 def detonar():
     conteo(2)
     print('BOOM!!!')
 
-    seed() 
+    seed()
     return randint(100, 15000000)
+
 
 def atacar_ciudades(ciudades):
     if ciudades:
@@ -23,12 +26,15 @@ def atacar_ciudades(ciudades):
             print('La ciudad de ' + ciudad + ' ha sido destruida')
             print('Megatones detonados: ' + str(megatones))
 
+
 def atacar_paises(paises):
     if paises:
         for pais in paises:
             if pais['es_enemigo'] and not pais['pago_proteccion']:
-                print(pais['nombre'] + ' es enemigo y no ha pagado proteccion, atacando ...')
+                print(pais['nombre'] +
+                      ' es enemigo y no ha pagado proteccion, atacando ...')
                 atacar_ciudades(pais['ciudades'])
+
 
 def atacar():
     objetivos = [

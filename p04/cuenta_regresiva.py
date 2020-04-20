@@ -5,5 +5,7 @@ def conteo(segundos):
     else:
         print('Contando ', segundos, ' segundos ...')
 
+
 conteo(0)
 conteo(15)
+

@@ -5,7 +5,8 @@ def conteo(segundos):
     else:
         for segundo_actual in reversed(range(1, segundos + 1)):
             print(segundo_actual)
-        
+
         print('BOOM!!!')
+
 
 conteo(10)
