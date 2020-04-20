@@ -99,8 +99,8 @@ description = "Read metadata from Python packages"
 marker = "python_version < \"3.8\""
 name = "importlib-metadata"
 optional = false
-python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
-version = "1.6.0"
+python-versions = ">=2.7,!=3.0,!=3.1,!=3.2,!=3.3"
+version = "0.23"
 
 [package.dependencies]
 zipp = ">=0.5"
@@ -112,26 +112,6 @@ version = ">=3.5"
 [package.dependencies.contextlib2]
 python = "<3"
 version = "*"
-
-[package.dependencies.pathlib2]
-python = "<3"
-version = "*"
-
-[package.extras]
-docs = ["sphinx", "rst.linker"]
-testing = ["packaging", "importlib-resources"]
-
-[[package]]
-category = "dev"
-description = "Read metadata from Python packages"
-marker = "python_version < \"3.8\""
-name = "importlib-metadata"
-optional = false
-python-versions = ">=2.7,!=3.0,!=3.1,!=3.2,!=3.3"
-version = "0.23"
-
-[package.dependencies]
-zipp = ">=0.5"
 
 [package.extras]
 docs = ["sphinx", "rst.linker"]
@@ -275,7 +255,7 @@ description = "A module for parsing dice notation"
 name = "py-rolldice"
 optional = false
 python-versions = "*"
-version = "0.3.9"
+version = "0.4.0"
 
 [package.dependencies]
 regex = "*"
@@ -377,7 +357,7 @@ version = "2020.4.4"
 [[package]]
 category = "dev"
 description = "scandir, a better directory iterator and faster os.walk()"
-marker = "python_version < \"3.4\" and sys_platform != \"win32\" or python_version < \"3.5\""
+marker = "python_version < \"3\" and sys_platform != \"win32\" or python_version < \"3.5\" or python_version < \"3.4\" and sys_platform != \"win32\" and (python_version < \"3.4\" and sys_platform != \"win32\" or python_version < \"3.5\") or python_version < \"3.4\" and sys_platform != \"win32\""
 name = "scandir"
 optional = false
 python-versions = "*"
@@ -532,7 +512,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pathlib2", "unittest2", "jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "1eb24e2aff67716611b7382b0f5b94f22525ee3baf45be53b2b2b5a04a0e098d"
+content-hash = "e47e7f6ba52ae6f54027c953710dd697e135ada43297512c8f0d1791acaedb6d"
 python-versions = "*"
 
 [metadata.files]
@@ -574,8 +554,6 @@ funcsigs = [
     {file = "funcsigs-1.0.2.tar.gz", hash = "sha256:a7bb0f2cf3a3fd1ab2732cb49eba4252c2af4240442415b4abce3b87022a8f50"},
 ]
 importlib-metadata = [
-    {file = "importlib_metadata-1.6.0-py2.py3-none-any.whl", hash = "sha256:2a688cbaa90e0cc587f1df48bdc97a6eadccdcd9c35fb3f976a09e3b5016d90f"},
-    {file = "importlib_metadata-1.6.0.tar.gz", hash = "sha256:34513a8a0c4962bc66d35b359558fd8a5e10cd472d37aec5f66858addef32c1e"},
     {file = "importlib_metadata-0.23-py2.py3-none-any.whl", hash = "sha256:d5f18a79777f3aa179c145737780282e27b508fc8fd688cb17c7a813e8bd39af"},
     {file = "importlib_metadata-0.23.tar.gz", hash = "sha256:aa18d7378b00b40847790e7c27e11673d7fed219354109d0e7b9e5b25dc3ad26"},
 ]
@@ -611,8 +589,8 @@ py = [
     {file = "py-1.8.1.tar.gz", hash = "sha256:5e27081401262157467ad6e7f851b7aa402c5852dbcb3dae06768434de5752aa"},
 ]
 py-rolldice = [
-    {file = "py-rolldice-0.3.9.tar.gz", hash = "sha256:dfa25917370d381882722ac1204deb15e243aaf5fd03a8593cb5c0bcca9f3d4a"},
-    {file = "py_rolldice-0.3.9-py3-none-any.whl", hash = "sha256:4d336fde528ee1620b5b950ebc281058b6bbe4fc2d9f6267c020bafa5a788770"},
+    {file = "py-rolldice-0.4.0.tar.gz", hash = "sha256:39269bbc7e881e76187dc954cd4d8968e33949ac20c5a195feec4a9c0d9e385e"},
+    {file = "py_rolldice-0.4.0-py3-none-any.whl", hash = "sha256:141d6c05114eea562b66d0e35ab3ba9d745bb2276c4a1c72a8cd37e0102a999d"},
 ]
 pyparsing = [
     {file = "pyparsing-2.4.7-py2.py3-none-any.whl", hash = "sha256:ef9d7589ef3c200abe66653d3f1ab1033c3c419ae9b9bdb1240a85b024efc88b"},
